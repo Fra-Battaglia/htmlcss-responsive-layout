@@ -1,6 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+}
+
+.row, .col {
+	border: 1px solid red;
+}
+
+.col-50 {
+	width: 50%;
+}
+
+.btn-white {
+	background-color: #FFFFFF;
+	color: #111111;
+	border-radius: 1000000px;
+	padding: 5px 10px;
+}
+
 /* Header */
 
+header {
+	height: 100px;
+	background-color: #3982F5;
+	padding: 25px;
+}
 
+header .container {
+	height: 100%;
+	display: flex;
+}
+
+header .container .row {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	background-color: #FFFFFF;
+	height: 50px;
+	width: calc(50px * 1.618);
+}
+
+.menu > nav {
+	display: none;
+}
+
+.hamburger {
+	font-size: 40px;
+	color: #FFFFFF;
+}
+
+/* Header Desktop */
+
+@media screen and (min-width: 992px) {
+
+	.menu > nav {
+		display: block;
+	}
+
+	.menu {
+		width: 50%;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	header .col{
+		display: flex;
+	}
+	
+	header .col > nav ul {
+		width: 100%;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	nav {
+		width: 100%;
+	}
+	
+	header .col > nav a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	header .col > nav .btn-white {
+		color: #111111;
+	}
+}
 
 /* Skills */
 
