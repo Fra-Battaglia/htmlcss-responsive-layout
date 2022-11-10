@@ -10,6 +10,14 @@ body {
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
 .container {
 	margin: 0 auto;
 }
@@ -31,6 +39,19 @@ body {
 	color: #111111;
 	border-radius: 1000000px;
 	padding: 5px 10px;
+}
+
+.btn-blue {
+	background-color: #3982F5;
+	color: #FFFFFF;
+	border-radius: 1000000px;
+	padding: 5px 10px;
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		max-width: 1200px;
+	}
 }
 
 /* Header */
@@ -101,7 +122,6 @@ header .container .row {
 	
 	header .col > nav a {
 		color: #FFFFFF;
-		text-decoration: none;
 	}
 
 	header .col > nav .btn-white {
@@ -111,9 +131,68 @@ header .container .row {
 
 /* Skills */
 
+.skills {
+	padding: 25px;
+}
 
+.skills .row {
+	flex-direction: column;
+	gap: 25px;
+}
 
-/* Our Job */
+.skill, .demo {
+	width: 100%;
+	padding: 25px;
+	border-radius: 25px;
+	background-color: #BDDCFC;
+	text-align: center;
+}
+
+.demo {
+	text-align: left;
+}
+
+.demo .image {
+	width: 50%;
+	height: 200px;
+	background-color: #3982F5;
+}
+
+.skill-icon {
+	color: #3982F5;
+	margin-bottom: 25px;
+}
+
+.skill-icon .img {
+	background-color: #3982F5;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.skill-text p{
+	background-color: #111111;
+	height: 70px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.skills .row{
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.demo {
+		flex-grow: 2;
+	}
+
+	.skill, .demo {
+		width: calc(100% / 3);;
+	}
+}
+
+/* Planning */
 
 
 
@@ -121,7 +200,7 @@ header .container .row {
 
 
 
-/* Benefits */
+/* Features */
 
 
 
