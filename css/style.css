@@ -30,6 +30,10 @@ a {
 	border: 1px solid red;
 }
 
+.col-33 {
+	width: calc(100% / 3);
+}
+
 .col-50 {
 	width: 50%;
 }
@@ -46,6 +50,20 @@ a {
 	color: #FFFFFF;
 	border-radius: 1000000px;
 	padding: 5px 10px;
+}
+
+.btn-purple {
+	background-color: #9692DE;
+	color: #111111;
+	border-radius: 1000000px;
+	padding: 5px 10px;
+}
+
+.card {
+	width: 100%;
+	padding: 25px;
+	border-radius: 25px;
+	text-align: center;
 }
 
 @media screen and (min-width: 992px) {
@@ -141,11 +159,7 @@ header .container .row {
 }
 
 .skill, .demo {
-	width: 100%;
-	padding: 25px;
-	border-radius: 25px;
 	background-color: #BDDCFC;
-	text-align: center;
 }
 
 .demo {
@@ -180,21 +194,72 @@ header .container .row {
 @media screen and (min-width: 768px) {
 	.skills .row{
 		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 
 	.demo {
-		flex-grow: 2;
+		width: calc(100% / 3 * 2 - 25px);;
 	}
 
-	.skill, .demo {
-		width: calc(100% / 3);;
+	.skill {
+		width: calc(100% / 3 - 25px);;
 	}
 }
 
 /* Planning */
 
+#planning {
+	background-color: #9692DE;
+	color: #FFFFFF;
+	padding: 50px 25px;
+}
 
+#planning .row {
+	flex-direction: column;
+	gap: 25PX;
+}
+
+#planning .img {
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+#planning p{
+	background-color: #FFFFFF;
+	height: 70px;
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+#planning .card {
+	background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 992px) {
+	#planning .row {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#planning > .container > .row > .col {
+		width: calc(100% / 3);
+	}
+
+	#planning .col:last-child{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	#planning .col .card {
+		margin-bottom: 25px;
+	}
+
+}
 
 /* Testimonials */
 
