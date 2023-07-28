@@ -54,10 +54,6 @@ a {
 	display: flex;
 }
 
-.row, .col {
-	border: 1px solid red;
-}
-
 .col-33 {
 	width: calc(100% / 3);
 }
